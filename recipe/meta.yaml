@@ -1,7 +1,7 @@
 {% set name = "eiger-io" %}
 {% set name_ = name.replace('-', '_') %}
-{% set version = "2.0.3" %}
-{% set sha256 = "34e2e4dc7a90ea7df9484005309d22a8eda3ab0da015686cb69f826c1461dd61" %}
+{% set version = "2.01" %}
+{% set sha256 = "7431e36b45da5d8c777561066dee9badfcede48b8d5e257c115cbd6db040b3ff" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
