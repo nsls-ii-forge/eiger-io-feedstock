@@ -5,7 +5,7 @@ Home: https://github.com/NSLS-II/eiger-io
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: I/O tools for the Eiger detector
 
