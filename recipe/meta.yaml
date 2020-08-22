@@ -1,7 +1,7 @@
 {% set name = "eiger-io" %}
 {% set name_ = name.replace('-', '_') %}
-{% set version = "2.0.3" %}
-{% set sha256 = "34e2e4dc7a90ea7df9484005309d22a8eda3ab0da015686cb69f826c1461dd61" %}
+{% set version = "2.0.4" %}
+{% set sha256 = "40f79e360c300a71dd358f5881c3e361ce08a0ce2780e953e0531bef27c65ad6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,4 +35,5 @@ test:
 about:
   home: https://github.com/NSLS-II/eiger-io
   license: BSD  # TODO: add a license file in the repo and feedstock
+  license_file: LICENSE
   summary: I/O tools for the Eiger detector
