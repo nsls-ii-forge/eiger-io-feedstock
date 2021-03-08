@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - h5py
-    - hdf5-lz4
+    - hdf5-external-filter-plugins
     - numpy
     - pims
     - six
